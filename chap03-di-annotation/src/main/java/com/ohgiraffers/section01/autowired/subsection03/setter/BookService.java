@@ -1,20 +1,21 @@
-package com.ohgiraffers.section01.autowired.subsection01.field;
+package com.ohgiraffers.section01.autowired.subsection03.setter;
 
 import com.ohgiraffers.section01.common.BookDAO;
-import com.ohgiraffers.section01.common.BookDAOImpl;
 import com.ohgiraffers.section01.common.BookDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service("bookServiceField")
+@Service("bookServiceSetter")
 public class BookService {
 
-
-    @Autowired
     private BookDAO bookDAO;
 
+    @Autowired
+    public void setBookDAO(BookDAO bookDAO) {
+        this.bookDAO = bookDAO;
+    }
 
     public List<BookDTO> selectAllBooks(){
         return bookDAO.selectBookList();

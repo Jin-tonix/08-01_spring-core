@@ -1,5 +1,6 @@
 package com.ohgiraffers.section01.common;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;
