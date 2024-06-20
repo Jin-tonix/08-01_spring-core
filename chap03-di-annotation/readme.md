@@ -4,7 +4,7 @@
 
 ## @Autowired
 > Bean 타입을 통해 주입할 Bean 객체를 찾는 어노테이션으로 spring Framework에서만 지원하는
-> Depoendency 용도의 annotation이다.
+> Dependency 용도의 annotation이다.
 1. field, method, Constructor에서 사용이 가능하다.
 2. 강제로 Bean을 지정하는 경우에는 @Qualifier를 사용한다.
 

@@ -15,10 +15,13 @@ public class PoketmonService {
     //@Qualifier("charmander")
     private Poketmon poketmon;
 
+
     @Inject
     public PoketmonService(Poketmon poketmon) {
         this.poketmon = poketmon;
     }
+
+
 
     public void poketmonAttack(){
         poketmon.attack();
